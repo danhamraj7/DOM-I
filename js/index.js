@@ -84,6 +84,19 @@ lAnchTag.style.fontSize = "18px";
 
 let headerText = document.querySelector('.cta h1').innerHTML = 'Dom<br>Is<br>Awesome';
 
+// Event Listener for headerText
+let pageHeader = document.querySelector(".cta h1");
+pageHeader.addEventListener("mouseover", (event) => {
+  pageHeader.style.color = "red";
+  pageHeader.style.fontSize = "6rem";
+})
+
+let pageHeaderRev = document.querySelector(".cta h1");
+pageHeader.addEventListener("mouseleave", (event) => {
+  pageHeader.style.color = "black";
+  pageHeader.style.fontSize = "72px";
+})
+
 const ctaBtn = document.querySelector('.cta-text button');
 ctaBtn.textContent = siteContent.cta.button;
 
@@ -133,6 +146,7 @@ contacth4.textContent = siteContent.contact["contact-h4"];
 
 // contact p
 const contP = document.querySelectorAll(".contact p")
+
 let contactText = document.querySelector('.contact p').innerHTML =
   '123 Way 456 Street <br> Somewhere, USA';
 

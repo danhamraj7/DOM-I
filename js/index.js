@@ -120,3 +120,30 @@ para[4].textContent = siteContent["main-content"]["vision-content"];
 
 const midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+/**************************Contact********************************************* */
+const contact = document.querySelector(".contact")
+contact.style.display = "flex";
+contact.style.flexDirection = "column";
+
+// contact h4
+const contacth4 = document.querySelector(".contact h4");
+contacth4.textContent = siteContent.contact["contact-h4"];
+
+// contact p
+const contP = document.querySelectorAll(".contact p")
+let contactText = document.querySelector('.contact p').innerHTML =
+  '123 Way 456 Street <br> Somewhere, USA';
+
+//contact styles
+contP[0].style.fontSize = "16px";
+contP[0].style.marginBottom = "10px";
+contP[1].textContent = siteContent.contact.phone;
+contP[1].style.fontSize = "16px";
+contP[1].style.marginBottom = "10px";
+contP[2].textContent = siteContent.contact.email;
+contP[2].style.fontSize = "14px";
+// /**************************Footer*********************************/
+const footer = document.querySelector("footer");
+footer.textContent = siteContent.footer.copyright;

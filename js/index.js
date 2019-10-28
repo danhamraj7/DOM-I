@@ -104,7 +104,7 @@ h4[3].textContent = siteContent["main-content"]["product-h4"];
 h4[4].textContent = siteContent["main-content"]["vision-h4"];
 
 // stretch challenge aim to style h4
-h4.forEach((currentVal) => {
+h4.forEach(currentVal => {
   currentVal.style.color = "#1e90ff";
   currentVal.style.fontSize = "20px";
   currentVal.style.marginLeft = "15px";

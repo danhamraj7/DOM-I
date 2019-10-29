@@ -84,7 +84,11 @@ lAnchTag.style.fontSize = "18px";
 
 let headerText = document.querySelector('.cta h1').innerHTML = 'Dom<br>Is<br>Awesome';
 
-// Event Listener for headerText
+// let headerText = document.querySelector('.cta h1');
+// headerText.textContent = "Dom\nIs\nAwesome";
+
+//Event Listener for headerText
+
 let pageHeader = document.querySelector(".cta h1");
 pageHeader.addEventListener("mouseover", (event) => {
   pageHeader.style.color = "red";
